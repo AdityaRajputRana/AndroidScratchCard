@@ -36,6 +36,10 @@ public class ScratchCard extends View {
         resolveAttr(context, null);
     }
 
+    public void resetScratch(){
+        mPath = new Path();
+    }
+
     private void resolveAttr(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ScratchCard);
         mDrawable = a.getDrawable(R.styleable.ScratchCard_scratchDrawable);
